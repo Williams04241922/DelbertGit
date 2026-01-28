@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<script src="../checkCountry.js"></script>
+<html>
+<script src="../../header2.js"></script>
+<body>
+<div class="body">
+    <script src="menu2.js"></script>
+    <style>
+        /* Keep main navigation menu red - Override all blue colors */
+        .nav-main > li > a,
+        .nav-main > li > a:hover,
+        .nav-main > li > a:focus,
+        .nav-main > li > a:active,
+        .nav-main > li.active > a,
+        .nav-main > li.active > a:hover,
+        .nav-main > li.active > a:focus,
+        .nav-pills > li > a,
+        .nav-pills > li > a:hover,
+        .nav-pills > li > a:focus,
+        .nav-pills > li.active > a,
+        .nav-pills > li.active > a:hover,
+        .nav-pills > li.active > a:focus {
+            color: #C8102E !important;
+            background-color: transparent !important;
+        }
+
+        /* Dropdown menu items */
+        .nav-main .dropdown-menu > li > a:hover,
+        .nav-main .dropdown-menu > li > a:focus {
+            background-color: #C8102E !important;
+            color: white !important;
+        }
+    </style>
+    <script>
+        // Mark Promotions menu item as active
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuItems = document.querySelectorAll('.nav-main > li > a');
+            menuItems.forEach(function(item) {
+                if (item.getAttribute('href') && item.getAttribute('href').indexOf('promotions.html') !== -1) {
+                    item.parentElement.classList.add('active');
+                }
+            });
+        });
+    </script>
+    <div role="main" class="main">
+        <div class="container">
+            <h1 class="page-header" style="margin-top: 20px; margin-bottom: 10px; color: #C8102E; font-weight: bold;">
+                Current Promotions
+            </h1>
+            <p class="lead" style="margin-bottom: 40px;">
+                Special offers on selected furniture items this month.
+            </p>
+
+            <!-- Main Featured Promotions -->
+            <section class="main-promotions" style="margin-bottom: 50px;">
+                <h2 style="color: #333; font-size: 28px; margin-bottom: 30px; font-weight: 600;">
+                    Featured Deals
+                </h2>
+                <div class="row">
+                    <!-- BRIMNES Promotion -->
+                    <div class="col-md-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-large" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                            <!-- Promotion Banner Image -->
+                            <div class="promo-banner" style="position: relative; height: 300px; background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%); overflow: hidden;">
+                                <img src="../../img/promotions/F_BM_212014-11-24.jpg"
+                                     style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3;"
+                                     alt="BRIMNES Promotion"
+                                     onerror="this.style.display='none';">
+                                <div style="position: absolute; top: 20px; right: 20px; background: #FFD700; color: #000; padding: 15px 20px; border-radius: 50%; font-weight: bold; font-size: 18px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+                                    <div style="font-size: 24px;">10%</div>
+                                    <div style="font-size: 12px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 8px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; text-transform: uppercase; color: #C8102E;">
+                                    Beds & Mattresses
+                                </div>
+                            </div>
+
+                            <!-- Promotion Details -->
+                            <div class="promo-details" style="padding: 30px;">
+                                <h3 style="color: #333; font-size: 26px; margin-bottom: 15px; font-weight: bold;">
+                                    BRIMNES November Promotion
+                                </h3>
+                                <div style="margin-bottom: 20px;">
+                                    <span style="font-size: 36px; color: #C8102E; font-weight: bold;">$270.00</span>
+                                    <span style="font-size: 18px; color: #999; text-decoration: line-through; margin-left: 10px;">U.P. $300.00</span>
+                                </div>
+                                <p style="color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 25px;">
+                                    Save 10% on BRIMNES bed collection. Available in multiple sizes and finishes.
+                                    Offer valid while stocks last.
+                                </p>
+                                <div class="promo-actions">
+                                    <a href="/B/SG/furnitureProductDetails.html?sku=F_BM_21"
+                                       class="btn btn-primary"
+                                       style="background: #C8102E; border: none; padding: 12px 30px; margin-right: 10px; border-radius: 5px; font-weight: 600;">
+                                        View Item
+                                    </a>
+                                    <a href="/B/SG/furnitureCategory.html?cat=Beds & Mattresses"
+                                       class="btn btn-outline"
+                                       style="border: 2px solid #C8102E; color: #C8102E; padding: 12px 30px; background: white; border-radius: 5px; font-weight: 600;">
+                                        View Category
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STRANDMON Promotion -->
+                    <div class="col-md-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-large" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                            <!-- Promotion Banner Image -->
+                            <div class="promo-banner" style="position: relative; height: 300px; background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%); overflow: hidden;">
+                                <img src="../../img/promotions/F_SC_402014-12-06.jpg"
+                                     style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3;"
+                                     alt="STRANDMON Promotion"
+                                     onerror="this.style.display='none';">
+                                <div style="position: absolute; top: 20px; right: 20px; background: #FFD700; color: #000; padding: 15px 20px; border-radius: 50%; font-weight: bold; font-size: 18px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+                                    <div style="font-size: 24px;">30%</div>
+                                    <div style="font-size: 12px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); padding: 8px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; text-transform: uppercase; color: #C8102E;">
+                                    Sofas & Chair
+                                </div>
+                            </div>
+
+                            <!-- Promotion Details -->
+                            <div class="promo-details" style="padding: 30px;">
+                                <h3 style="color: #333; font-size: 26px; margin-bottom: 15px; font-weight: bold;">
+                                    STRANDMON November Promo
+                                </h3>
+                                <div style="margin-bottom: 20px;">
+                                    <span style="font-size: 36px; color: #C8102E; font-weight: bold;">$63.00</span>
+                                    <span style="font-size: 18px; color: #999; text-decoration: line-through; margin-left: 10px;">U.P. $90.00</span>
+                                </div>
+                                <p style="color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 25px;">
+                                    30% discount on STRANDMON chairs. Classic wing chair design available in various colors.
+                                    Limited quantities available.
+                                </p>
+                                <div class="promo-actions">
+                                    <a href="/B/SG/furnitureProductDetails.html?sku=F_SC_40"
+                                       class="btn btn-primary"
+                                       style="background: #C8102E; border: none; padding: 12px 30px; margin-right: 10px; border-radius: 5px; font-weight: 600;">
+                                        View Item
+                                    </a>
+                                    <a href="/B/SG/furnitureCategory.html?cat=Sofas & Chair"
+                                       class="btn btn-outline"
+                                       style="border: 2px solid #C8102E; color: #C8102E; padding: 12px 30px; background: white; border-radius: 5px; font-weight: 600;">
+                                        View Category
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- All Other Promotions -->
+            <section class="other-promotions">
+                <h2 style="color: #333; font-size: 28px; margin-bottom: 30px; font-weight: 600;">
+                    More Promotions
+                </h2>
+                <div class="row">
+                    <!-- Children's Furniture Promotion -->
+                    <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-small" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                            <div style="position: relative; height: 200px; background: linear-gradient(135deg, #FF6B9D 0%, #C239B3 100%); overflow: hidden;">
+                                <img src="../../img/promotions/F_CH_73.jpg"
+                                     style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;"
+                                     alt="Children Promotion"
+                                     onerror="this.style.display='none';">
+                                <div style="position: absolute; top: 15px; right: 15px; background: #FFD700; color: #000; padding: 10px; border-radius: 50%; font-weight: bold; font-size: 14px; text-align: center; width: 60px; height: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="font-size: 18px;">15%</div>
+                                    <div style="font-size: 10px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 11px; text-transform: uppercase; color: #C239B3;">
+                                    Children
+                                </div>
+                            </div>
+                            <div style="padding: 20px;">
+                                <h4 style="color: #333; font-size: 18px; margin-bottom: 10px; font-weight: bold; min-height: 50px;">
+                                    Children's Furniture Sale
+                                </h4>
+                                <div style="margin-bottom: 12px;">
+                                    <span style="font-size: 24px; color: #C8102E; font-weight: bold;">$127.50</span>
+                                    <span style="font-size: 14px; color: #999; text-decoration: line-through; margin-left: 8px;">U.P. $150.00</span>
+                                </div>
+                                <p style="color: #666; font-size: 13px; margin-bottom: 15px;">
+                                    15% off on selected children's furniture. Desks, chairs, and storage units included.
+                                </p>
+                                <a href="/B/SG/furnitureCategory.html?cat=Children"
+                                   class="btn btn-sm btn-primary"
+                                   style="background: #C8102E; border: none; padding: 8px 20px; width: 100%; border-radius: 5px; font-weight: 600;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tables & Desks Promotion -->
+                    <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-small" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                            <div style="position: relative; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); overflow: hidden;">
+                                <div style="position: absolute; top: 15px; right: 15px; background: #FFD700; color: #000; padding: 10px; border-radius: 50%; font-weight: bold; font-size: 14px; text-align: center; width: 60px; height: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="font-size: 18px;">20%</div>
+                                    <div style="font-size: 10px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 11px; text-transform: uppercase; color: #764ba2;">
+                                    Tables & Desks
+                                </div>
+                            </div>
+                            <div style="padding: 20px;">
+                                <h4 style="color: #333; font-size: 18px; margin-bottom: 10px; font-weight: bold; min-height: 50px;">
+                                    Office Furniture Sale
+                                </h4>
+                                <div style="margin-bottom: 12px;">
+                                    <span style="font-size: 24px; color: #C8102E; font-weight: bold;">$159.99</span>
+                                    <span style="font-size: 14px; color: #999; text-decoration: line-through; margin-left: 8px;">U.P. $199.99</span>
+                                </div>
+                                <p style="color: #666; font-size: 13px; margin-bottom: 15px;">
+                                    20% discount on work desks and tables. Suitable for home offices and study rooms.
+                                </p>
+                                <a href="/B/SG/furnitureCategory.html?cat=Tables & Desks"
+                                   class="btn btn-sm btn-primary"
+                                   style="background: #C8102E; border: none; padding: 8px 20px; width: 100%; border-radius: 5px; font-weight: 600;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Storage Solutions Promotion -->
+                    <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-small" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                            <div style="position: relative; height: 200px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); overflow: hidden;">
+                                <div style="position: absolute; top: 15px; right: 15px; background: #FFD700; color: #000; padding: 10px; border-radius: 50%; font-weight: bold; font-size: 14px; text-align: center; width: 60px; height: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="font-size: 18px;">25%</div>
+                                    <div style="font-size: 10px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 11px; text-transform: uppercase; color: #f5576c;">
+                                    Cabinets & Storage
+                                </div>
+                            </div>
+                            <div style="padding: 20px;">
+                                <h4 style="color: #333; font-size: 18px; margin-bottom: 10px; font-weight: bold; min-height: 50px;">
+                                    Storage Furniture Sale
+                                </h4>
+                                <div style="margin-bottom: 12px;">
+                                    <span style="font-size: 24px; color: #C8102E; font-weight: bold;">$112.50</span>
+                                    <span style="font-size: 14px; color: #999; text-decoration: line-through; margin-left: 8px;">U.P. $150.00</span>
+                                </div>
+                                <p style="color: #666; font-size: 13px; margin-bottom: 15px;">
+                                    25% off on cabinets and storage units. Various sizes and configurations available.
+                                </p>
+                                <a href="/B/SG/furnitureCategory.html?cat=Cabinets & Storage"
+                                   class="btn btn-sm btn-primary"
+                                   style="background: #C8102E; border: none; padding: 8px 20px; width: 100%; border-radius: 5px; font-weight: 600;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lighting Promotion -->
+                    <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-small" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                            <div style="position: relative; height: 200px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); overflow: hidden;">
+                                <div style="position: absolute; top: 15px; right: 15px; background: #FFD700; color: #000; padding: 10px; border-radius: 50%; font-weight: bold; font-size: 14px; text-align: center; width: 60px; height: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="font-size: 18px;">18%</div>
+                                    <div style="font-size: 10px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 11px; text-transform: uppercase; color: #fa709a;">
+                                    Lightings
+                                </div>
+                            </div>
+                            <div style="padding: 20px;">
+                                <h4 style="color: #333; font-size: 18px; margin-bottom: 10px; font-weight: bold; min-height: 50px;">
+                                    Lighting Sale
+                                </h4>
+                                <div style="margin-bottom: 12px;">
+                                    <span style="font-size: 24px; color: #C8102E; font-weight: bold;">$40.99</span>
+                                    <span style="font-size: 14px; color: #999; text-decoration: line-through; margin-left: 8px;">U.P. $49.99</span>
+                                </div>
+                                <p style="color: #666; font-size: 13px; margin-bottom: 15px;">
+                                    18% discount on lighting fixtures and lamps. Floor lamps, table lamps, and ceiling lights.
+                                </p>
+                                <a href="/B/SG/furnitureCategory.html?cat=Lightings"
+                                   class="btn btn-sm btn-primary"
+                                   style="background: #C8102E; border: none; padding: 8px 20px; width: 100%; border-radius: 5px; font-weight: 600;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bathroom Promotion -->
+                    <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-small" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                            <div style="position: relative; height: 200px; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); overflow: hidden;">
+                                <div style="position: absolute; top: 15px; right: 15px; background: #FFD700; color: #000; padding: 10px; border-radius: 50%; font-weight: bold; font-size: 14px; text-align: center; width: 60px; height: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="font-size: 18px;">12%</div>
+                                    <div style="font-size: 10px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 11px; text-transform: uppercase; color: #30cfd0;">
+                                    Bathroom
+                                </div>
+                            </div>
+                            <div style="padding: 20px;">
+                                <h4 style="color: #333; font-size: 18px; margin-bottom: 10px; font-weight: bold; min-height: 50px;">
+                                    Bathroom Furniture Sale
+                                </h4>
+                                <div style="margin-bottom: 12px;">
+                                    <span style="font-size: 24px; color: #C8102E; font-weight: bold;">$87.99</span>
+                                    <span style="font-size: 14px; color: #999; text-decoration: line-through; margin-left: 8px;">U.P. $99.99</span>
+                                </div>
+                                <p style="color: #666; font-size: 13px; margin-bottom: 15px;">
+                                    12% off on bathroom furniture. Cabinets, shelves, and accessories on sale.
+                                </p>
+                                <a href="/B/SG/furnitureCategory.html?cat=Bathroom"
+                                   class="btn btn-sm btn-primary"
+                                   style="background: #C8102E; border: none; padding: 8px 20px; width: 100%; border-radius: 5px; font-weight: 600;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Furniture Promotion -->
+                    <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="promo-card-small" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                            <div style="position: relative; height: 200px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); overflow: hidden;">
+                                <div style="position: absolute; top: 15px; right: 15px; background: #FFD700; color: #000; padding: 10px; border-radius: 50%; font-weight: bold; font-size: 14px; text-align: center; width: 60px; height: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="font-size: 18px;">22%</div>
+                                    <div style="font-size: 10px;">OFF</div>
+                                </div>
+                                <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 11px; text-transform: uppercase; color: #5f72bd;">
+                                    Study
+                                </div>
+                            </div>
+                            <div style="padding: 20px;">
+                                <h4 style="color: #333; font-size: 18px; margin-bottom: 10px; font-weight: bold; min-height: 50px;">
+                                    Study Furniture Sale
+                                </h4>
+                                <div style="margin-bottom: 12px;">
+                                    <span style="font-size: 24px; color: #C8102E; font-weight: bold;">$156.00</span>
+                                    <span style="font-size: 14px; color: #999; text-decoration: line-through; margin-left: 8px;">U.P. $200.00</span>
+                                </div>
+                                <p style="color: #666; font-size: 13px; margin-bottom: 15px;">
+                                    22% discount on study furniture. Bookshelves, study desks, and chairs included.
+                                </p>
+                                <a href="/B/SG/furnitureCategory.html?cat=Study"
+                                   class="btn btn-sm btn-primary"
+                                   style="background: #C8102E; border: none; padding: 8px 20px; width: 100%; border-radius: 5px; font-weight: 600;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Promotional Banner -->
+            <div class="alert" style="background: linear-gradient(135deg, #C8102E 0%, #8B0000 100%); border: none; border-radius: 10px; padding: 30px; text-align: center; color: white; margin-top: 40px;">
+                <h3 style="color: white; font-size: 24px; margin-bottom: 10px;">
+                    Terms and Conditions
+                </h3>
+                <p style="font-size: 16px; margin-bottom: 0;">
+                    All promotions are valid while stocks last. Prices are subject to change without prior notice.
+                    For enquiries, please <a href="/B/SG/contactUs.html" style="color: #FFD700; text-decoration: underline; font-weight: bold;">contact us</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../../footer.js"></script>
+</div>
+
+<style>
+    /* Hover effects for promotion cards */
+    .promo-card-large:hover, .promo-card-small:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(200,16,46,0.25) !important;
+    }
+
+    /* Button hover effects */
+    .btn-primary:hover {
+        background: #8B0000 !important;
+        transform: scale(1.05);
+    }
+
+    .btn-outline:hover {
+        background: #C8102E !important;
+        color: white !important;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .promo-banner {
+            height: 200px !important;
+        }
+
+        .promo-details {
+            padding: 20px !important;
+        }
+
+        h1.page-header {
+            font-size: 28px !important;
+        }
+
+        h2 {
+            font-size: 22px !important;
+        }
+    }
+</style>
+
+<!-- Vendor JS -->
+<script src="/vendor/modernizr.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
